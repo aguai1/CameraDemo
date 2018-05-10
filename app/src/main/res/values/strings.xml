@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CameraDemo</string>
+    <string name="notHandDevice">非手持设备</string>
+</resources>

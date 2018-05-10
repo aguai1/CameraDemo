@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout style="@style/SettingLayout">
+
+        <TextView
+            style="@style/SettingText"
+            android:text="屏幕分辨率" />
+
+        <TextView
+            android:id="@+id/tv_resolution"
+            style="@style/SettingRightLayout" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:background="#dcdcdc" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/SettingLayout">
+
+        <TextView
+            style="@style/SettingText"
+            android:text="@string/notHandDevice" />
+
+        <Switch
+            android:id="@+id/sw_not_hand_device"
+            style="@style/SettingRightLayout" />
+
+    </FrameLayout>
+
+    <FrameLayout style="@style/SettingLayout">
+
+        <TextView
+            style="@style/SettingText"
+            android:text="相机预览横向翻转" />
+
+        <Switch
+            android:id="@+id/sw_flipx"
+            style="@style/SettingRightLayout" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:background="#dcdcdc" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/SettingLayout">
+        <TextView
+            style="@style/SettingText"
+            android:text="相机预览角度调整" />
+        <EditText
+            android:id="@+id/edit_camerarotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right"
+            android:hint="0/90/180/270"
+            android:layout_marginRight="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:background="#dcdcdc" />
+    </FrameLayout>
+    <FrameLayout
+        style="@style/SettingLayout">
+        <TextView
+            android:id="@+id/tv_reset"
+            style="@style/SettingText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:text="重置" />
+    </FrameLayout>
+</LinearLayout>
